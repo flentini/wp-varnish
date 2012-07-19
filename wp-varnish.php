@@ -120,7 +120,6 @@ class WPVarnish {
 	  $this->WPVarnishPurgeCommonObjects($p->ID);
   }
   function WPVarnishPurgeCommonObjects() {
-    $this->WPVarnishPurgeObject("/");
     $this->WPVarnishPurgeObject("/$");
     $this->WPVarnishPurgeObject("/feed/");
     $this->WPVarnishPurgeObject("/feed/atom/");
