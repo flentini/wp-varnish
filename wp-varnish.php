@@ -121,6 +121,7 @@ class WPVarnish {
   }
   function WPVarnishPurgeCommonObjects() {
     $this->WPVarnishPurgeObject("/");
+    $this->WPVarnishPurgeObject("/$");
     $this->WPVarnishPurgeObject("/feed/");
     $this->WPVarnishPurgeObject("/feed/atom/");
     $this->WPVarnishPurgeObject("/category/(.*)");
